@@ -40,6 +40,13 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 
 </p>
 
+### Classes of IPv4 address:
+
+<div align="center" width="100%">
+    <img src="./images/IPV4_classes.png">
+    <img src="./images/classes_of_IPv4.png">
+</div>
+
 ### Public and Private IP Addresses:
 
 
@@ -55,11 +62,15 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 
 ### Subnetting steps:
 
-1. Identify the class of the IP address and note the default subnet mask.
-2. Convert the default subnet mask into binary.
-3. Note the number of hosts required per subnet and find the subnet Generator (SG) and octet position.
-4. Generate the new subnet mask.
-5. Use the SG and generate the network ranges (subnets) in the appropriate octet position.
+1. ` Identify the class of the IP address` and `note the default subnet mask`.
+
+2. `Convert the default subnet mask into binary`.
+
+3. `Note the number of hosts required per subnet` and `find the subnet Generator (SG)` and `octet position`.
+
+4. `Generate the new subnet mask`.
+
+5. `Use the SG and generate the network ranges (subnets) in the appropriate octet position`.
 
 ### Subnet a network based on the host requirements.
 
@@ -87,5 +98,5 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 | 216.21.5.192 | 216.21.5.193 - 216.21.5.222 | 216.21.5.223 |
 | 216.21.5.224 | 216.21.5.225 - 216.21.5.254 | 216.21.5.255 |
 
-
 </center>
+
