@@ -121,5 +121,6 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 
 </center>
 
-### What is IP overlap?
+### What is IP address overlaps?
 
+- `IP address overlaps`, which occur when two or more networks or devices are `assigned IP addresses that fall within the same range or subnet`. This can create significant problems in routing, communication, and network segmentation.
