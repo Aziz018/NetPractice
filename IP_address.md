@@ -4,17 +4,48 @@
 
 ## IP address:
 
-### Definition:
-- An IP address, or Internet Protocol address, is a unique identifier assigned to each device connected to a network that uses the Internet Protocol for communication. It serves two main purposes:
+- An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions:
 
-1. **Identifying Devices**: An IP address identifies a specific device on a network, allowing it to be found and communicated with by other devices. This could be a computer, smartphone, server, or any other device connected to the network.
+- An IPv4 address is 32 bits long.
+- The address space of IPv4 is $2^{32}$ or 4,294,967,296 (more than 4 billion).
 
-2. **Locating Devices**: It provides the location of the device in terms of its network and helps route data to the correct destination.
+1. **Identification**: It identifies a device on a network. Each device has a unique IP address within the network, allowing it to be distinguished from other devices.
 
-### Types of IP Addresses:
+2. **Location Addressing**: It provides the location of the device in the network, which helps in routing data between devices. The IP address acts as a return address for data packets sent across the network.
 
-- Public IP Addresses:
-- Private IP Addresses:
+
+<p align="center" width="100%">
+    <img src="./images/IPv4_example.jpg" alt="IP address" />
+</p>
+
+### Notations:
+
+1. **Dotted Decimal Notation (IPv4)**:
+This is the most commonly used format for IPv4 addresses. It represents an IP address as four decimal numbers separated by dots. Each number ranges from 0 to 255.
+2. **Binary Notation**:
+In binary notation, an IP address is represented as a sequence of 1s and 0s. This format is used internally by computers and routers to process IP addresses.
+
+- Example:
+
+- IP Address: `192.168.1.1`.
+- IP Address in binary: `11000000.10101000.00000001.00000001`.
+
+### => Conversion binary to decimal:
+
+<p align="center" width="100%">
+
+| $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ | 
+|-|-|-|-|-|-|-|-|
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+
+</p>
+
+### Public and Private IP Addresses:
+
+
+- **Public IP Addresses**: These are assigned by Internet Service Providers (ISPs) and are unique across the entire internet. They are used for communication between devices on different networks.
+
+- **Private IP Addresses**: These are used within a local network and are not routable on the internet. They are typically used for internal communication within a private network (e.g., home or office networks). Private IP ranges include addresses like `192.168.x.x`, `10.x.x.x`, and `172.16.x.x` to `172.31.x.x`.
 
 ## What is subnetting?
 
@@ -46,11 +77,15 @@
 
 <center>
 
-| Network Address: | Broadcast Address |
-|-|-|
-| 216.21.5.32 | 216.21.5.63 |
-| 216.21.5.0 | 216.21.5.31 |
-| 216.21.5.64 | 216.21.5.127 |
-| 216.21.5.128 | 216.21.5.159 |
+| Network Address: | Usable IP Range | Broadcast Address |
+|-|-|-|
+| 216.21.5.0 | 216.21.5.1 - 216.21.5.30 | 216.21.5.31 |
+| 216.21.5.32 | 216.21.5.33 - 216.21.5.62 | 216.21.5.63 |
+| 216.21.5.64 | 216.21.5.65 - 216.21.5.126 | 216.21.5.127 |
+| 216.21.5.128 | 216.21.5.129 - 216.21.5.158 | 216.21.5.159 |
+| 216.21.5.160 | 216.21.5.161 - 216.21.5.190 | 216.21.5.191 |
+| 216.21.5.192 | 216.21.5.193 - 216.21.5.222 | 216.21.5.223 |
+| 216.21.5.224 | 216.21.5.225 - 216.21.5.254 | 216.21.5.255 |
+
 
 </center>
