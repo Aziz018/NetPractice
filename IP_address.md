@@ -2,7 +2,7 @@
 
 - A `network` is nothing more than two or more computers connected to each other so that they can exchange information, such as e-mail messages or documents, or share resources, such as disk storage or printers. In most cases, this connection is made via electrical cables that carry the information in the form of electrical signals. But in some cases, other types of connections are used. For example, fiber-optic cables let computers communicate at extremely high speeds by using impulses of light. Wireless networks let computers communicate by using radio signals, so the computers aren’t restricted by physical cables.
 
-## IP address:
+## IP address
 
 - An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions:
 
@@ -30,7 +30,7 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 - IP Address: `192.168.1.1`.
 - IP Address in binary: `11000000.10101000.00000001.00000001`.
 
-### => Conversion binary to decimal:
+### => Conversion binary to decimal
 
 <p align="center" width="100%">
 
@@ -40,19 +40,40 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 
 </p>
 
-### Classes of IPv4 address:
+### Classes of IPv4 address
 
 <div align="center" width="100%">
     <img src="./images/IPV4_classes.png">
     <img src="./images/classes_of_IPv4.png">
 </div>
 
-### Public and Private IP Addresses:
+### Public and Private IP Addresses
 
 
 - **Public IP Addresses**: These are assigned by Internet Service Providers (ISPs) and are unique across the entire internet. They are used for communication between devices on different networks.
 
 - **Private IP Addresses**: These are used within a local network and are not routable on the internet. They are typically used for internal communication within a private network (e.g., home or office networks). Private IP ranges include addresses like `192.168.x.x`, `10.x.x.x`, and `172.16.x.x` to `172.31.x.x`.
+
+### Finding the Subnet ID
+
+- Finding the subnet ID is a three steps process:
+
+1. First, we convert the IP address and the Mask to binary.
+2. Then we determine the network and host portions of the address based on the mask. 1s define the network portion, and 0s define the host portion of the address.
+3. We find the subnet ID in binary by changing all host bits to 0s. We find the Broadcast address in binary by changing all host bits to 1s. 
+4. We convert the binary representations to decimals.
+
+#### Example 1: 25.44.33.145/27
+
+<div bg-color="0xffffff" align="center" width="100%">
+    <img src="./images/2024-09-09_10-09.png">
+</div>
+
+#### Example 2: 172.155.2.250/18
+
+<div bg-color="0xffffff" align="center" width="100%">
+    <img src="./images/2024-09-09_10-12.png">
+</div>
 
 ## What is subnetting?
 
@@ -60,9 +81,9 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 - The practice of dividing a network into multiple smaller networks is called **subnetting**.
 - Devices within the same subnet share the same **most-significant bit-group** (or **network portion**) of their IP address, which is determined by the subnet mask. This portion is identical for all devices within the same subnet, distinguishing it from other subnets.
 
-### Subnetting steps:
+### Subnetting steps
 
-1. ` Identify the class of the IP address` and `note the default subnet mask`.
+1. `Identify the class of the IP address` and `note the default subnet mask`.
 
 2. `Convert the default subnet mask into binary`.
 
@@ -72,7 +93,7 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 
 5. `Use the SG and generate the network ranges (subnets) in the appropriate octet position`.
 
-### Subnet a network based on the host requirements.
+### Subnet a network based on the host requirements
 
 - Example: Subnet the IP address 216.21.5.0 into 30 hosts in each subnet.
 
@@ -99,4 +120,6 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 | 216.21.5.224 | 216.21.5.225 - 216.21.5.254 | 216.21.5.255 |
 
 </center>
+
+### What is IP overlap?
 
