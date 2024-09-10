@@ -4,21 +4,13 @@
 
 ## IP address:
 
+- An **IP (Internet Protocol) address** is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions:
+- An IPv4 address is **32 bits** long.
+- The address space of IPv4 is $2^{32}$ or 4,294,967,296 (more than 4 billion).
 
 <div align="center" width="100%">
     <img src="./images/ip1.png" alt="IPv4 vs IPv6" />
 </div>
-
-
-- An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions:
-
-
-<div align="center" width="100%">
-    <img src="./images/IPv4-vs-IPv6.png" alt="IPv4 vs IPv6" />
-</div>
-
-- An IPv4 address is 32 bits long.
-- The address space of IPv4 is $2^{32}$ or 4,294,967,296 (more than 4 billion).
 
 1. **Identification**: It identifies a device on a network. Each device has a unique IP address within the network, allowing it to be distinguished from other devices.
 
@@ -58,8 +50,14 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
     <img src="./images/classes_of_IPv4.png">
 </div>
 
-### Public and Private IP Addresses:
+### IPv4 vs IPv6
 
+
+<div align="center" width="100%">
+    <img src="./images/IPv4-vs-IPv6.png" alt="IPv4 vs IPv6" />
+</div>
+
+### Public and Private IP Addresses:
 
 - **Public IP Addresses**: These are assigned by Internet Service Providers (ISPs) and are unique across the entire internet. They are used for communication between devices on different networks.
 
@@ -70,6 +68,11 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
     => 172.16.0.0 – 172.31.255.255   (1,048,576 IP addresses)
     => 192.168.0.0 – 192.168.255.255 (65,536 IP addresses)
 ```
+
+### Static vs. Dynamic IP Addresses:
+
+- **Static IP addresses** are manually configured and do not change. They are useful for servers and devices that need a constant IP address (e.g., web servers, printers).
+- **Dynamic IP addresses** are assigned automatically by a DHCP (Dynamic Host Configuration Protocol) server and may change over time. Most consumer devices (e.g., laptops, smartphones) use dynamic IP addresses.
 
 ### Finding the Subnet ID:
 
