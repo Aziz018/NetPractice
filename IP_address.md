@@ -36,13 +36,13 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 
 ### => Conversion binary to decimal:
 
-<p align="center" width="100%">
+<center>
 
 | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ | 
 |-|-|-|-|-|-|-|-|
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
-</p>
+</center>
 
 ### Classes of IPv4 address:
 
