@@ -12,14 +12,11 @@
     <img src="./images/ip1.png" alt="IPv4 vs IPv6" />
 </div>
 
+### Functions of an IP address:
+
 1. **Identification**: It identifies a device on a network. Each device has a unique IP address within the network, allowing it to be distinguished from other devices.
 
 2. **Location Addressing**: It provides the location of the device in the network, which helps in routing data between devices. The IP address acts as a return address for data packets sent across the network.
-
-
-<div align="center" width="100%">
-    <img src="./images/IPv4_example.jpg" alt="IP address" />
-</div>
 
 ### Notations:
 
@@ -27,6 +24,10 @@
 This is the most commonly used format for IPv4 addresses. It represents an IP address as four decimal numbers separated by dots. Each number ranges from 0 to 255.
 2. **Binary Notation**:
 In binary notation, an IP address is represented as a sequence of 1s and 0s. This format is used internally by computers and routers to process IP addresses.
+
+<div align="center" width="100%">
+    <img src="./images/IPv4_example.jpg" alt="IP address" />
+</div>
 
 - Example:
 
