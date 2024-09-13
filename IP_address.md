@@ -210,6 +210,20 @@ The **host part** is `10`, which identifies a specific device within the network
 3. If it finds the matching port, it forwards the frame only to that port. If it doesn't find the address, the switch broadcasts the frame to all ports (except the one from which the frame arrived).
 4. As devices communicate, the switch learns the MAC addresses of devices and updates its MAC address table.
 
+#### What is a MAC Address?
+
+- A **MAC (Media Access Control) address** is a unique identifier assigned to a network interface card (NIC) or other network devices by the manufacturer. It operates at the Data Link Layer (Layer 2) of the OSI model and is used to identify devices on a local network (such as Ethernet or Wi-Fi).
+
+- **Format**: It is typically represented as 12 hexadecimal digits, (48 bit) often separated by colons or hyphens for readability (e.g., `00:1A:2B:3C:4D:5E`).
+- **Permanence**: MAC addresses are usually burned into the hardware and are supposed to be globally unique to each device.
+- **Use**: They are mainly used for communication within a local network segment, like identifying devices connected to the same Ethernet switch or Wi-Fi router.
+
+#### What is the difference between a MAC address vs. IP address?
+
+<div align="center" width="100%">
+    <img src="./images/networking-mac_vs_ip_address.png" alt="IP address vs MAC address" />
+</div>
+
 
 ## Router:
 
@@ -297,3 +311,57 @@ The **host part** is `10`, which identifies a specific device within the network
 - **Destination**: `192.168.1.0/24` is reachable through `eth0` with a metric of 1.
 - **Destination**: `10.0.0.0/8` is reachable through `eth1` with a metric of 10.
 - **Default Route (0.0.0.0/0)**: Used when no specific route matches, forwarded to `192.168.0.1` via `eth0` with a metric of 20.
+
+# Other concepts:
+
+## NAT (Network Address Translation):
+
+- **Network Address Translation (NAT)** is a technique used in computer networks to map multiple private IP addresses within a local network to a single public IP address or a few public IP addresses. It allows devices on a private network (e.g., a home network) to communicate with external networks (e.g., the internet) using one or more public IP addresses, providing several key advantages, including conserving public IP address space and enhancing security.
+<div align="center">
+    <img src="./images/network-address-translation-diagram.png" />
+</div>
+
+### How NAT Works?
+
+1. **Private IP Addresses**: Devices within a local network are assigned private IP addresses, which are not routable on the internet. Common ranges of private IP addresses include:
+
+- 10.0.0.0 to 10.255.255.255
+- 172.16.0.0 to 172.31.255.255
+- 192.168.0.0 to 192.168.255.255
+
+2. **Public IP Address**: The local network is connected to the internet through a router that has a public IP address. The router performs NAT to translate the private IP addresses of devices into the router's public IP address.
+
+3. **Mapping**: When a device inside the network (with a private IP) sends data to the internet, the router:
+
+- Replaces the private IP address with the router’s public IP.
+- Keeps track of the mapping between the private IP and the public IP using a table.
+- Sends the data to its destination on the internet.
+
+When a response comes back, the router checks its table and forwards the response to the appropriate device on the private network.
+
+## NIC (Network Interface Card):
+
+- A **Network Interface Card (NIC)** is a hardware component that allows a computer, server, or other device to connect to a network. It facilitates communication between the device and the network by sending and receiving data over a network cable (Ethernet) or wirelessly (Wi-Fi). NICs can either be built into the motherboard (integrated NIC) or added to the device via expansion slots (external NIC).
+
+<div align="center">
+    <img src="./images/NIC.jpg" />
+</div>
+
+### Key Functions of a NIC:
+
+1. **Physical Connectivity**: NIC provides a physical interface (e.g., an Ethernet port or antenna for Wi-Fi) to connect a device to the network infrastructure.
+2. **Data Transmission**: It handles data transmission to and from the network by preparing, transmitting, and receiving data packets according to the appropriate network protocol (such as TCP/IP).
+3. **MAC Address Handling**: Every NIC is assigned a unique **MAC (Media Access Control) address**. The MAC address helps in identifying the device within a local network at the data link layer (Layer 2 of the OSI model).
+4. **Data Conversion**: NICs convert data from the device into a format suitable for transmission over the network (e.g., converting digital signals into electrical or radio signals).
+
+### Components of a NIC:
+1. **Controller**: A chip that manages the NIC’s operations, handling data encoding/decoding and interfacing with the operating system.
+2. **Memory (Buffer)**: NICs often include buffer memory to store data temporarily before transmission.
+3. **Transceiver**: Converts digital data into signals that can be transmitted over a network medium (electrical for copper wires or light for fiber-optic cables).
+
+### NIC and OSI Model:
+- **Layer 1 (Physical Layer)**: NIC is responsible for physical data transmission (e.g., converting data into electrical signals for Ethernet).
+- **Layer 2 (Data Link Layer)**: NIC handles MAC addressing and framing, ensuring data is correctly packaged for transmission.
+
+## What is a Packet?
+
