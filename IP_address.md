@@ -218,6 +218,18 @@ The **host part** is `10`, which identifies a specific device within the network
 - **Permanence**: MAC addresses are usually burned into the hardware and are supposed to be globally unique to each device.
 - **Use**: They are mainly used for communication within a local network segment, like identifying devices connected to the same Ethernet switch or Wi-Fi router.
 
+<div align="center" width="100%">
+    <img src="./images/mac-address-format.webp" alt="IP address vs MAC address" />
+</div>
+
+- Here are some OUI of well-known manufacturers:
+```
+CC:46:D6 - Cisco 
+3C:5A:B4 - Google, Inc.
+3C:D9:2B - Hewlett Packard
+00:9A:CD - HUAWEI TECHNOLOGIES CO.,LTD
+```
+
 #### What is the difference between a MAC address vs. IP address?
 
 <div align="center" width="100%">
