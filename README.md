@@ -9,3 +9,4 @@ This project is a general practical exercise to let you discover networking.
 - https://www.geeksforgeeks.org/tcp-ip-model/
 - https://www.youtube.com/playlist?list=PLBlnK6fEyqRi7E6_6rLC5N_v50TW6qlrf
 - https://github.com/lpaube/NetPractice
+- https://www.youtube.com/watch?v=YJGGYKAV4pA

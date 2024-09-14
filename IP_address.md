@@ -337,9 +337,9 @@ CC:46:D6 - Cisco
 
 1. **Private IP Addresses**: Devices within a local network are assigned private IP addresses, which are not routable on the internet. Common ranges of private IP addresses include:
 
-- 10.0.0.0 to 10.255.255.255
-- 172.16.0.0 to 172.31.255.255
-- 192.168.0.0 to 192.168.255.255
+- `10.0.0.0` to `10.255.255.255`
+- `172.16.0.0` to `172.31.255.255`
+- `192.168.0.0` to `192.168.255.255`
 
 2. **Public IP Address**: The local network is connected to the internet through a router that has a public IP address. The router performs NAT to translate the private IP addresses of devices into the router's public IP address.
 
