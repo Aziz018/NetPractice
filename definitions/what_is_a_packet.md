@@ -59,7 +59,7 @@ Imagine you are sending an email with a 10MB attachment. Instead of sending the 
 ## What Does a Packet Look Like?
 
 <div align="center">
-    <img src="./images/fire0603.gif">
+    <img src="../images/fire0603.gif">
     <p>source: https://www.cs.ait.ac.th/~on/O/oreilly/tcpip/firewall/ch06_03.htm</p>
 </div>
 ---

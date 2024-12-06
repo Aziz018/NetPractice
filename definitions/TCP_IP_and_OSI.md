@@ -93,7 +93,7 @@ The **TCP/IP model** is a more practical model, focusing on the communication pr
 The OSI model is more theoretical and used for understanding the different functions in networking, while the TCP/IP model is a more practical representation of how modern networks (especially the internet) operate. Understanding both models is important for designing, managing, and troubleshooting networks.
 <br/>
 <div align="center">
-    <img src="./images/The-logical-mapping-between-OSI-basic-reference-model-and-the-TCP-IP-stack.png">
+    <img src="../images/The-logical-mapping-between-OSI-basic-reference-model-and-the-TCP-IP-stack.png">
 </div>
 
 ---

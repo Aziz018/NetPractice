@@ -9,7 +9,7 @@
 - The address space of IPv4 is $2^{32}$ or 4,294,967,296 (more than 4 billion).
 
 <div align="center" width="100%">
-    <img src="./images/ip1.png" alt="IPv4 vs IPv6" />
+    <img src="../images/ip1.png" alt="IPv4 vs IPv6" />
 </div>
 
 ### Functions of an IP address:
@@ -26,7 +26,7 @@ This is the most commonly used format for IPv4 addresses. It represents an IP ad
 In binary notation, an IP address is represented as a sequence of 1s and 0s. This format is used internally by computers and routers to process IP addresses.
 
 <div align="center" width="100%">
-    <img src="./images/IPv4_example.jpg" alt="IP address" />
+    <img src="../images/IPv4_example.jpg" alt="IP address" />
 </div>
 
 - Example:
@@ -47,15 +47,15 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 ### Classes of IPv4 address:
 
 <div align="center" width="100%">
-    <img src="./images/IPV4_classes.png">
-    <img src="./images/classes_of_IPv4.png">
+    <img src="../images/IPV4_classes.png">
+    <img src="../images/classes_of_IPv4.png">
 </div>
 
 ### IPv4 vs IPv6
 
 
 <div align="center" width="100%">
-    <img src="./images/IPv4-vs-IPv6.png" alt="IPv4 vs IPv6" />
+    <img src="../images/IPv4-vs-IPv6.png" alt="IPv4 vs IPv6" />
 </div>
 
 ### Public and Private IP Addresses:
@@ -87,13 +87,13 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 #### Example 1: 25.44.33.145/27
 
 <div bg-color="0xffffff" align="center" width="100%">
-    <img src="./images/2024-09-09_10-09.png">
+    <img src="../images/2024-09-09_10-09.png">
 </div>
 
 #### Example 2: 172.155.2.250/18
 
 <div bg-color="0xffffff" align="center" width="100%">
-    <img src="./images/2024-09-09_10-12.png">
+    <img src="../images/2024-09-09_10-12.png">
 </div>
 
 ## What is subnetting?
@@ -167,7 +167,7 @@ In binary notation, an IP address is represented as a sequence of 1s and 0s. Thi
 The **host part** is `10`, which identifies a specific device within the network.
 
 <div align="center" width="100%">
-    <img src="./images/mask1.png" alt="IPv4 vs IPv6" />
+    <img src="../images/mask1.png" alt="IPv4 vs IPv6" />
 </div>
 
 
@@ -190,7 +190,7 @@ The **host part** is `10`, which identifies a specific device within the network
 - **Switch** is a hardware device used to connect multiple devices within a local area network (LAN). It operates at the **data link layer** **(Layer 2)** of the OSI model, meaning it primarily deals with MAC addresses and forwarding data frames between devices on the same network.
 
 <div align="center" width="100%">
-    <img src="./images/switch1.png" alt="IPv4 vs IPv6" />
+    <img src="../images/switch1.png" alt="IPv4 vs IPv6" />
 </div>
 
 ### Key Features of a Switch:
@@ -219,7 +219,7 @@ The **host part** is `10`, which identifies a specific device within the network
 - **Use**: They are mainly used for communication within a local network segment, like identifying devices connected to the same Ethernet switch or Wi-Fi router.
 
 <div align="center" width="100%">
-    <img src="./images/mac-address-format.webp" alt="IP address vs MAC address" />
+    <img src="../images/mac-address-format.webp" alt="IP address vs MAC address" />
 </div>
 
 - Here are some OUI of well-known manufacturers:
@@ -233,7 +233,7 @@ CC:46:D6 - Cisco
 #### What is the difference between a MAC address vs. IP address?
 
 <div align="center" width="100%">
-    <img src="./images/networking-mac_vs_ip_address.png" alt="IP address vs MAC address" />
+    <img src="../images/networking-mac_vs_ip_address.png" alt="IP address vs MAC address" />
 </div>
 
 
@@ -242,7 +242,7 @@ CC:46:D6 - Cisco
 - A **router** is a networking device that connects multiple networks and directs data between them, typically operating at **Layer 3 (Network Layer)** of the OSI model. Routers use IP addresses to determine the best path for forwarding data to its destination, whether it's within a local network (LAN) or to a remote network, such as the internet (WAN).
 
 <div align="center" width="100%">
-    <img src="./images/route1.png" alt="IPv4 vs IPv6" />
+    <img src="../images/route1.png" alt="IPv4 vs IPv6" />
 </div>
 
 ### Key Functions of a Router:
@@ -281,7 +281,7 @@ CC:46:D6 - Cisco
 - A **routing table** is a data table stored in a router or a network host that lists the routes to particular network destinations.
 
 <div align="center" width="100%">
-    <img src="./images/routing_table1.png" alt="IPv4 vs IPv6" />
+    <img src="../images/routing_table1.png" alt="IPv4 vs IPv6" />
 </div>
 
 #### Structure:
@@ -330,7 +330,7 @@ CC:46:D6 - Cisco
 
 - **Network Address Translation (NAT)** is a technique used in computer networks to map multiple private IP addresses within a local network to a single public IP address or a few public IP addresses. It allows devices on a private network (e.g., a home network) to communicate with external networks (e.g., the internet) using one or more public IP addresses, providing several key advantages, including conserving public IP address space and enhancing security.
 <div align="center">
-    <img src="./images/network-address-translation-diagram.png" />
+    <img src="../images/network-address-translation-diagram.png" />
 </div>
 
 ### How NAT Works?
@@ -356,7 +356,7 @@ When a response comes back, the router checks its table and forwards the respons
 - A **Network Interface Card (NIC)** is a hardware component that allows a computer, server, or other device to connect to a network. It facilitates communication between the device and the network by sending and receiving data over a network cable (Ethernet) or wirelessly (Wi-Fi). NICs can either be built into the motherboard (integrated NIC) or added to the device via expansion slots (external NIC).
 
 <div align="center">
-    <img src="./images/NIC.jpg" />
+    <img src="../images/NIC.jpg" />
 </div>
 
 ### Key Functions of a NIC:
