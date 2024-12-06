@@ -374,6 +374,3 @@ When a response comes back, the router checks its table and forwards the respons
 ### NIC and OSI Model:
 - **Layer 1 (Physical Layer)**: NIC is responsible for physical data transmission (e.g., converting data into electrical signals for Ethernet).
 - **Layer 2 (Data Link Layer)**: NIC handles MAC addressing and framing, ensuring data is correctly packaged for transmission.
-
-## What is a Packet?
-
